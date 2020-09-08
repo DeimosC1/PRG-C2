@@ -1,0 +1,23 @@
+package sample;
+import java.util.Scanner;
+
+public class scan {
+
+
+    public static void main(String[] args) {
+        Scanner cislo = new Scanner(System.in);
+        System.out.println("zadej cislo a tento program rozhodne zda je dělitelné sedmi:");
+        int age = cislo.nextInt();
+        int sedm = 7;
+        int sum = age % sedm;
+        System.out.println(sum);
+        if (sum==0){
+            System.out.println("cislo je dělitelné sedmi");
+        }
+        else{
+            System.out.println("cislo není dělitelné sedmi");
+        }
+
+    }
+
+}
