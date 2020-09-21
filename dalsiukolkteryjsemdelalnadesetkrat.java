@@ -36,3 +36,4 @@ public class prvocisla {
         }
     }
 }
+//nechutne slozity musel jsem si pomoct odmocninama
