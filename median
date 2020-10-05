@@ -1,0 +1,31 @@
+package sample;
+
+import java.util.Arrays;
+
+public class median {
+    public static void main(String[] args) {
+        int cisla[]={1,9,47,2};
+        int median = median(cisla);
+        System.out.println(median);
+
+}
+
+    static int median(int[] cisla) {
+        Arrays.sort(cisla);
+        int median;
+
+        int total = cisla.length;
+
+        if (total % 2 == 0) {
+            int sum = cisla[total / 2] +
+                    cisla[total / 2 - 1];
+
+            median = ((int) sum) / 2;
+        } else {
+
+            median = (int) cisla[cisla.length / 2];
+        }
+
+        return (int) median;
+    }
+}
